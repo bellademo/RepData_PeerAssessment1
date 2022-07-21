@@ -52,8 +52,8 @@ ggplot(step_sum, aes(x = steps)) +
   geom_histogram(fill = "red", binwidth = 1000) +
   labs(title = "Total Number of Steps per Day", x = "Number of    Steps", y = "Frequency of Days")
 ```
+![000014](https://user-images.githubusercontent.com/103701074/180260615-a8488bc4-8d05-400b-9aec-a08cd192256a.png)
 
-    ## Warning: Removed 8 rows containing non-finite values (stat_bin).
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
@@ -81,6 +81,7 @@ plot(avg_step$interval, avg_step$steps, type = "l", lwd = 2,
      main = "Average Number of Steps Taken Across All Days",
      xlab = "5-minute interval", ylab = "Average number of steps")
 ```
+![000013](https://user-images.githubusercontent.com/103701074/180260720-aa2c5454-766c-4f98-88e7-ea351b110f56.png)
 
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
@@ -122,6 +123,7 @@ hist(total_steps_full$steps, breaks = 20,
      main = "Total Number of Steps w/o NAs",
      xlab = "Steps", ylab = "Frequency")
 ```
+![000010](https://user-images.githubusercontent.com/103701074/180260766-c7272c96-64fc-4996-8781-b42390dbcd62.png)
 
 ![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
@@ -157,5 +159,6 @@ ggplot(last_df, aes(x = interval , y = steps, color= week)) +
                      x = "Interval", y = "Number of Steps") +
   facet_wrap(~ week , ncol = 1, nrow=2)
 ```
+![000017](https://user-images.githubusercontent.com/103701074/180260829-eff6d552-01c6-43cc-9c7c-ceda857a3427.png)
 
 ![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
