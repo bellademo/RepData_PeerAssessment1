@@ -8,9 +8,7 @@ date: "`r Sys.Date()`"
 
 ```{r, echo=TRUE}
 
-install.packages("data.table")
-install.packages("dplyr")
-install.packages("ggplot2")
+library(knitr)
 library(data.table)
 library(dplyr)
 library(ggplot2)
@@ -108,8 +106,6 @@ ggplot(last_df, aes(x = interval , y = steps, color= week)) +
   facet_wrap(~ week , ncol = 1, nrow=2)
 ```
 
-```{r, echo FALSE}
-install.packages("knitr")
-library(knitr)
-knitr::knit2html()
+```{r}
+knit2html("PA1_template1.Rmd")
 ```
